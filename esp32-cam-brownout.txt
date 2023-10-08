@@ -1,0 +1,1 @@
+#include "soc/soc.h"#include "soc/rtc_cntl_reg.h"//Write (or) input this code in setup()  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
