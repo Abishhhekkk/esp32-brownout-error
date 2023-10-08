@@ -1,2 +1,6 @@
 # esp32-brownout-error
-Hey there! I know it has been a hard time for you to debug the esp32 cam module. It requires lot of time to debug the problem. Here's an easy fix to the problem : Brownout Triggered Error
+Hey there! I know it has been a hard time for you to debug the esp32 cam module. It requires lot of time to debug the problem. Here's an easy fix to the problem : Brownout Triggered Error.
+
+Kindly checkout the file below to fix the error.
+
+I also wish to share the problem faced by me although I entered this code and turned my esp32-cam-module.Before that, I need you to understand the rootcause of the problem why brownout error is triggered. The main reason is the esp32 cam module(I used AI Thinker module) operates on 3.3 volts but for better clarity and considering the fluctuations we are using 5V. So if there is any fluctuations or if there is no stable power is supplied to the cam module, brownout error is triggered. Often many youtube channels recommend to use external power supply as it can provide stable current to the board which in case microcontrollers like Arduino don't supply desired power. My way of solving is quite good and worked for me!. Enter the code and run the program but the main problem you may face is the board will get heated up as you did not solve the power fluctuations. Take this into consideration and work on it. All the best, my buddy :) 
